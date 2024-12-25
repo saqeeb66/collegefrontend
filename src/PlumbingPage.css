@@ -1,0 +1,120 @@
+/* Basic Styling for the Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  /* Container for the Data */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  li {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  li:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  /* Displaying Issue Information */
+  h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #2c3e50;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 8px 0;
+    color: #555;
+  }
+  
+  p strong {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  /* Style for No Data Message */
+  .no-data {
+    text-align: center;
+    font-size: 1.2em;
+    color: #999;
+    margin-top: 30px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    li {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.8em;
+    }
+  
+    h3 {
+      font-size: 1.3em;
+    }
+  
+    p {
+      font-size: 1em;
+    }
+  }
+  /* Styling for image, audio, and video media */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .audio-container audio,
+  .video-container video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  li:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  

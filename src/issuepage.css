@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.submission-task {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.header3 {
+  display: flex;
+  justify-content: space-between; /* Space between the back button and header */
+  align-items: center;
+  margin-bottom: 20px; /* Space between header and form content */
+}
+
+.header1 h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.back-btn:hover {
+  color: #0056b3;
+}
+
+.issue-section {
+  margin-bottom: 20px;
+}
+
+.raised-Status label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.issue-section h5 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+  margin-top: 12px;
+}
+
+.date {
+  font-size: 14px;
+  color: #888;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+  height: 100px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.attach-file input {
+  display: none;
+}
+
+.attach-file label {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.attach-file label:hover {
+  background-color: #0056b3;
+}
+
+.voice-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 48%; /* Adjust width to fit side by side with file upload */
+}
+
+.voice-btn:hover {
+  background-color: #218838;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.mark-as-done {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.mark-as-done input {
+  margin-right: 10px;
+}
+
+.remarks {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.audio-preview {
+  margin-top: 20px;
+}
+
+.audio-preview audio {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.work-status {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-status label {
+  font-size: 14px;
+  color: #555;
+}
+
+.work-status input {
+  margin-right: 10px;
+}
+
+.uploaded-preview p {
+  font-size: 14px;
+  color: #333;
+}
+
+.uploaded-preview {
+  margin-top: 10px;
+}
+
+.uploaded-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Additional responsive adjustments for smaller screen sizes */
+@media (max-width: 600px) {
+  .submission-task {
+    padding: 20px;
+  }
+
+  .voice-btn, .attach-file label {
+    width: 48%; /* Allow buttons to fit side by side on smaller screens */
+  }
+
+  .work-status {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,164 @@
+/* General styling for the page */
+.raised-issue {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  min-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Allow header content to wrap on small screens */
+}
+
+.header1 h3 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+  flex: 1; /* Allow header title to take available space */
+  text-align: center; /* Center title on small screens */
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-top: 10px; /* Add space between button and header title */
+}
+
+.back-btn:hover {
+  color: #ffdd57;
+}
+
+@media (max-width: 768px) {
+  .back-btn {
+    font-size: 16px;
+    margin-top: 0; /* Remove margin on mobile for better alignment */
+  }
+
+  .header1 h3 {
+    font-size: 22px; /* Slightly smaller title on mobile */
+  }
+}
+
+/* Table container */
+.table-container1 {
+  margin-top: 30px;
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+/* Table styling */
+.issue-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.issue-table th, .issue-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.issue-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.issue-table td {
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+
+.issue-table tr:hover {
+  background-color: #f1f1f1;
+  cursor: default;
+}
+
+/* Responsive table design */
+@media (max-width: 768px) {
+  .issue-table th, .issue-table td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .issue-table td {
+    font-size: 12px; /* Slightly smaller text on mobile */
+  }
+
+  .raised-issue {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+}
+
+/* Status row color styling */
+td.status-completed {
+  background-color: #28a745; /* Green */
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+td.status-processing {
+  background-color: #ffc107; /* Yellow */
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Styling for audio player */
+audio {
+  width: 150px;
+  height: 25px;
+  margin: 5px 0;
+}
+
+/* No issues message */
+.issue-table tr.no-issues td {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* For the Raised By column, adjust text */
+.issue-table td.raised-by {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Additional hover effects */
+.issue-table td {
+  transition: background-color 0.3s ease;
+}
+
+.issue-table td:hover {
+  background-color: #f9f9f9;
+}
+
+/* Enhanced focus for accessibility */
+.back-btn:focus, 
+.issue-table td:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}

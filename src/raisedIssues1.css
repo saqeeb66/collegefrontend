@@ -1,0 +1,123 @@
+/* General styling for Raised Issue Page */
+.raised-issue {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.header1 h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.tabs-container1 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tabs-container1 button {
+  padding: 10px 15px;
+  margin: 0 10px;
+  border: none;
+  background-color: lightgray;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.tabs-container1 button.active-tab {
+  background-color: steelblue;
+  color: white;
+}
+
+.table-container1 {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.issue-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.issue-table th, .issue-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.issue-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.issue-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.issue-table td button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.issue-table td button:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 1024px) {
+  .input1, .button2 {
+    font-size: 18px;
+    padding: 14px;
+  }
+}
+
+.button2 {
+  padding: 12px;
+  background-color: #1a1a8f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 190px;
+}
+.success-message {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
